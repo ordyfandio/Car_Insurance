@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Driver_detail.DriverController">
+   <children>
+      <ImageView fitHeight="75.0" fitWidth="150.0" layoutX="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/rapport_car.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="252.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver Detail">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Label layoutX="147.0" layoutY="184.0" text="Name :" />
+      <Label layoutX="147.0" layoutY="247.0" text="Number License :" />
+      <Label layoutX="147.0" layoutY="307.0" text="address :" />
+      <TextField fx:id="txtname" layoutX="304.0" layoutY="180.0" promptText="Enter your name" />
+      <TextField fx:id="txtlicense" layoutX="304.0" layoutY="243.0" promptText="Enter your license" />
+      <TextField fx:id="txtaddress" layoutX="304.0" layoutY="303.0" promptText="Enter your address" />
+      <Button fx:id="driverbutton" layoutX="278.0" layoutY="367.0" mnemonicParsing="false" onAction="#driverbuttonOnAction" prefHeight="45.0" prefWidth="127.0" style="-fx-background-color: #0bf24c; -fx-cursor: hand;" text="Save Information" textFill="WHITE" />
+      <Button fx:id="carownerbutton" layoutX="58.0" layoutY="472.0" mnemonicParsing="false" onAction="#carownerbuttonOnAction" prefHeight="45.0" prefWidth="127.0" style="-fx-background-color: #0bf24c; -fx-cursor: hand;" text="Car Owner" textFill="WHITE" />
+      <Button fx:id="accidentbutton" layoutX="208.0" layoutY="472.0" mnemonicParsing="false" onAction="#accidentbuttonOnAction" prefHeight="45.0" prefWidth="127.0" style="-fx-background-color: #0bf24c; -fx-cursor: hand;" text="Accident Detail" textFill="WHITE" />
+      <Button fx:id="registerbutton" layoutX="360.0" layoutY="472.0" mnemonicParsing="false" onAction="#registerbuttonOnAction" prefHeight="45.0" prefWidth="127.0" style="-fx-background-color: #0bf24c; -fx-cursor: hand;" text="Register Car" textFill="WHITE" />
+      <Button fx:id="removebutton" layoutX="518.0" layoutY="469.0" mnemonicParsing="false" onAction="#removebuttonOnAction" prefHeight="45.0" prefWidth="127.0" style="-fx-background-color: #ee0707; -fx-cursor: hand;" text="Remove Car" textFill="WHITE" />
+   </children>
+</Pane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register_car.RegisterController">
+   <children>
+      <ImageView fx:id="brandingImageView" fitHeight="90.0" fitWidth="119.0" layoutX="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo-d-assurance-auto.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="170.0" layoutY="149.0" text="Matricule:" />
+      <Label layoutX="168.0" layoutY="204.0" text="Owner_id :" />
+      <Label layoutX="170.0" layoutY="258.0" text="Car Brand:" />
+      <Label layoutX="170.0" layoutY="307.0" text="Car Color:" />
+      <Label layoutX="168.0" layoutY="359.0" text="Driver License:" />
+      <Label layoutX="168.0" layoutY="413.0" text="Policy_id :" />
+      <Label layoutX="170.0" layoutY="461.0" text="Year:" />
+      <TextField fx:id="txtmatricule" layoutX="294.0" layoutY="145.0" />
+      <TextField fx:id="txtowner" layoutX="294.0" layoutY="200.0" />
+      <TextField fx:id="txtbrand" layoutX="294.0" layoutY="254.0" />
+      <TextField fx:id="txtcolor" layoutX="294.0" layoutY="303.0" />
+      <TextField fx:id="txtlicense" layoutX="294.0" layoutY="355.0" />
+      <TextField fx:id="txtpolicy" layoutX="294.0" layoutY="409.0" />
+      <TextField fx:id="txtyear" layoutX="294.0" layoutY="457.0" />
+      <Button fx:id="buttonRegister" layoutX="304.0" layoutY="513.0" mnemonicParsing="false" onAction="#buttonRegisterOnAction" prefHeight="44.0" prefWidth="141.0" style="-fx-background-color: #0de84e;" text="Save Information" textFill="WHITE" />
+      <Text layoutX="325.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Car">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="accidentbutton" layoutX="266.0" layoutY="586.0" mnemonicParsing="false" onAction="#accidentbuttonOnAction" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: #0de84e;" text="Accident Detail" textFill="WHITE" />
+      <Button fx:id="carbutton" layoutX="101.0" layoutY="586.0" mnemonicParsing="false" onAction="#carOnAction" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: #0de84e;" text="Car Detail" textFill="WHITE" />
+      <Button fx:id="drivebutton" layoutX="423.0" layoutY="586.0" mnemonicParsing="false" onAction="#drivebuttonOnAction" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: #0de84e;" text="Driver Detail" textFill="WHITE" />
+      <Button fx:id="removebutton" layoutX="563.0" layoutY="586.0" mnemonicParsing="false" onAction="#removebuttonOnAction" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: #da0909;" text="Remove Car" textFill="WHITE" />
+   </children>
+</Pane>
